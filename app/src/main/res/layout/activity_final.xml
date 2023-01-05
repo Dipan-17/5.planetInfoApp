@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalActivity"
+    android:background="@color/primary"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/secondary"
+        android:padding="20dp"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_earth"
+                android:adjustViewBounds="true"
+                android:elevation="500dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"
+                android:textAllCaps="false"
+                android:text="OOOOPS !!!"
+                android:letterSpacing=".1"
+                android:padding="3dp"
+                android:textSize="30sp"
+                android:layout_marginTop="7dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="Space Travel Not Currently available..."
+                android:letterSpacing=".1"
+                android:padding="3dp"
+                android:textSize="15sp"
+                android:layout_marginTop="7dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="Contact in a Few Years"
+                android:letterSpacing=".1"
+                android:padding="3dp"
+                android:textStyle="bold
+"
+                android:textSize="18sp"
+                android:layout_marginTop="7dp">
+
+            </TextView>
+
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

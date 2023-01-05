@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_header"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp"
+        >
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PLANETO"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/white"
+            android:gravity="start"
+            android:layout_marginLeft="16dp"
+            android:textStyle="bold"
+            android:textSize="25sp">
+        </TextView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

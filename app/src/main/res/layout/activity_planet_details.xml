@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    tools:context=".planetDetails">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@drawable/bg_info">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_planet_Info"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:elevation="40dp"
+            android:src="@drawable/ic_earth">
+
+        </ImageView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/secondary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="60dp">
+
+                <TextView
+                    android:id="@+id/tv_planetName_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="PLANET"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_galaxyName_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Milkyway Galaxy"
+                    android:textColor="@color/subtext"
+                    android:textSize="14sp">
+
+                </TextView>
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#03a9f4">
+
+                </View>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_distance">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/tv_distanceValue_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="99.99 km"
+                        android:textColor="@color/subtext"
+                        android:textSize="14sp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/ic_gravity" />
+
+                    <TextView
+                        android:id="@+id/tv_gravityValue_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="3.711 m/ss"
+                        android:textColor="@color/subtext"
+                        android:textSize="14sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:letterSpacing="0.12"
+                    android:text="OverView"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"></TextView>
+
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="-2dp"
+                    android:background="#03a9f4">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/tv_overView_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="1dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel porta mauris. In at ligula felis. Morbi at magna augue. Cras vehicula est lectus, sit amet sollicitudin orci dapibus at. Proin nec suscipit ligula. Sed maximus, lorem sed aliquet volutpat, leo ligula condimentum sem, eu venenatis enim nibh nec nunc. Nam blandit luctus justo suscipit euismod. Nullam iaculis arcu vel metus auctor, dignissim finibus felis pretium. Donec fermentum magna a magna mattis, sit amet egestas mi tincidunt.
+                                  Mauris accumsan arcu nibh, et fermentum tortor porta nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis auctor venenatis ante, quis porttitor ex dictum at. Vestibulum quis neque in mauris malesuada ullamcorper. Nam semper molestie commodo. Quisque hendrerit varius purus, vitae fringilla tellus volutpat id. In vel purus id neque mollis finibus eu euismod dolor. Praesent dapibus gravida dolor, quis eleifend ex maximus vel.
+                                  Fusce vel aliquet justo, vitae condimentum mi. Vestibulum vitae commodo tellus. Pellentesque vitae sagittis diam. Nam iaculis elit tellus, sed euismod dolor molestie vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam pretium est sollicitudin mi sagittis, non feugiat massa mollis. Fusce quis vehicula nibh, a viverra sem. Nulla porta ipsum vitae velit dignissim, et feugiat nunc molestie. Nam maximus mollis tortor et porta. Nullam interdum interdum auctor. In eget pulvinar turpis. Quisque tempus metus pellentesque est posuere aliquet. Aliquam erat volutpat. Nullam fringilla dui leo, eget interdum sem ultrices quis.
+                                  Donec nisi lacus, ornare vel interdum sit amet, bibendum non dolor. In hac habitasse platea dictumst. Curabitur et pretium est. Aenean a rutrum leo. Sed magna enim, ullamcorper eu viverra vitae, varius sit amet nibh. Mauris ac tortor scelerisque, faucibus felis sit amet, gravida mauris. Cras vel elementum sem, nec fringilla risus. Sed sit amet malesuada magna.
+                                  Phasellus eleifend dui sit amet metus tempus sagittis. Aliquam lacinia non sapien vel congue. Maecenas efficitur hendrerit metus quis egestas. Morbi nec lacus eget lorem scelerisque lacinia. Nulla sodales, quam in gravida fringilla, risus risus accumsan ex, nec venenatis purus diam id justo. Quisque ornare turpis urna, efficitur efficitur purus condimentum eu. Donec dapibus, neque nec auctor fermentum, eros dui mattis ipsum, ac elementum lectus ligula sit amet tellus. Nulla posuere diam sit amet scelerisque cursus. Quisque pharetra, lorem eu imperdiet sodales, nulla libero ultrices nisi, gravida mattis arcu augue gravida mi. Vivamus lobortis fermentum est, et tempor erat imperdiet ut."
+                    android:textColor="@color/subtext"
+                    android:textSize="20sp">
+                </TextView>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+        <TextView
+
+            android:id="@+id/button_info"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_footer"
+            android:gravity="center"
+            android:text="Book Your Ride  >"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
